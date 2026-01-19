@@ -18,7 +18,7 @@ void	ft_isascii(char c)
 		return (1);
 	return (0);
 }
-/*
+
 #include <stdio.h>
 
 int		main(void)
