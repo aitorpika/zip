@@ -6,7 +6,13 @@ CFLAGS = -Wall -Wextra -Werror #diferentes reglas de compilacion
 
 HEADER = libft.h #para que tenga eb cuenta el .h ademas de los .c
 
-SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c
+SRC = ft_isalpha.c \
+	 ft_isdigit.c \
+	  ft_isalnum.c \
+	   ft_isascii.c \
+	    ft_isprint.c \
+	     ft_strlen.c \
+	      *ft_memset.c \
 
 OBJ = $(SRC:%.c=%.o)
 

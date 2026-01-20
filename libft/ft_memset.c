@@ -1,32 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apicaza- <apicaza-@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/19 16:46:44 by apicaza-          #+#    #+#             */
-/*   Updated: 2026/01/20 11:51:15 by apicaza-         ###   ########.fr       */
+/*   Created: 2026/01/20 17:02:06 by apicaza-          #+#    #+#             */
+/*   Updated: 2026/01/20 17:22:50 by apicaza-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isascii(int c)
+void	*ft_memset(void *str, int c, size_t n)
 {
-	if (c >= 0 && c <= 127)
-		return (1);
-	return (0);
+	size_t			i;
+	unsigned char	*temp;
+
+	temp = (unsigned char *) str;
+	i = 0;
+	while (i < n)
+	{
+		temp[i] = (unsigned char) c;
+		i++;
+	}
+	return (str);
 }
 /*
 #include <stdio.h>
 
-int		main(void)
+int	main(void)
 {
-	char	c = 140;
-	int		result;
+	size_t n = 5;
+	int	c='A';
+	char	str[] = "Aupa Athletic";
 
-	result = ft_isascii(c);
-	printf("%d", result);
+	printf("antes del cambio %s\n", str);
+	ft_memset(str, c, n);
+	printf("despues del cambio %s\n", str);
 	return (0);
 }*/
