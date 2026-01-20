@@ -6,7 +6,7 @@
 /*   By: apicaza- <apicaza-@student.42urduliz.      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 16:16:51 by apicaza-          #+#    #+#             */
-/*   Updated: 2026/01/19 18:01:26 by apicaza-         ###   ########.fr       */
+/*   Updated: 2026/01/20 11:59:24 by apicaza-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -23,7 +23,7 @@ int	ft_isalnum(int c)
 
 int	main(void)
 {
-	char	c ='?';
+	char	c ='a';
 	int	resultado;
 
 	resultado = ft_isalnum(c);

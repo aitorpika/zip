@@ -10,15 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef libft_h
-#define libft_h
+#ifndef LIBFT_H
+#define LIBFT_H
 
 /*******************************************************************************
 * 			        char functions                                 *
 *******************************************************************************/
 
-void	ft_isalpha(int c);
-void	ft_isdigit(char c);
+int	ft_isalpha(int c);
+int	ft_isdigit(int c);
+int	ft_isalnum(int c);
+int	ft_isascii(int c);
 
 
 
