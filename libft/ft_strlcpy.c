@@ -1,32 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apicaza- <apicaza-@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/20 14:54:49 by apicaza-          #+#    #+#             */
-/*   Updated: 2026/01/22 12:20:07 by apicaza-         ###   ########.fr       */
+/*   Created: 2026/01/22 15:06:55 by apicaza-          #+#    #+#             */
+/*   Updated: 2026/01/22 16:04:20 by apicaza-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	if (c >= 32 && c <= 126)
-		return (1);
-	return (0);
+	size_t	i;
+	size_t	len;
+
+	i = 0;
+	len = 0;
+	while (src[len] != '\0')
+		len++;
+	if (size == 0)
+		return (len);
+	while (src[i] != '\0' && i < (size - 1))
+	{
+		dest[i] = src [i];
+		i++;
+	}
+	dest[i] = '\0';
+	return (len);
 }
 /*
 #include <stdio.h>
 
 int	main(void)
 {
-	char	c = 140;
-	int		result;
+	char	src[] ="Aupa Athletic";
+	char	dest[7];
+	size_t	len;
 
-	result = ft_isprint(c);
-	printf("%d", result);
+	len = ft_strlcpy(dest, src, 7);
+	printf("Texto en destino: %s\n", dest);
+	printf("Valor devuelto: %zu\n", len);
 	return (0);
 }*/
