@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: apicaza- <apicaza-@student.42urduliz.      +#+  +:+       +#+        */
+/*   By: apicaza <apicaza@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 11:09:44 by apicaza-          #+#    #+#             */
-/*   Updated: 2026/01/20 16:04:22 by apicaza-         ###   ########.fr       */
+/*   Updated: 2026/01/23 16:58:52 by apicaza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size);
 
 int		ft_toupper(int c);
 int		ft_tolower(int c);
+char	*ft_strchr(const char *str, int c);
+char	*ft_strrchr(const char *str, int c);
 
 #endif
