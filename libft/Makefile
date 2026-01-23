@@ -1,10 +1,9 @@
-
-NAME = libft.a #nombre del archivo que vas a generar 
+NAME = libft.a
 
 CC  = cc #compilador que va a usar
 CFLAGS = -Wall -Wextra -Werror #diferentes reglas de compilacion
 
-HEADER = libft.h #para que tenga eb cuenta el .h ademas de los .c
+HEADER = libft.h
 
 SRC = ft_isalpha.c \
 	 ft_isdigit.c \
@@ -18,6 +17,8 @@ SRC = ft_isalpha.c \
 	         ft_memmove.c \
 	          ft_strlcpy.c \
 	           ft_strlcat.c \
+	            ft_toupper.c \
+	             ft_tolower.c \
 
 OBJ = $(SRC:%.c=%.o)
 
