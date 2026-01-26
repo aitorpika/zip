@@ -6,7 +6,7 @@
 /*   By: apicaza <apicaza@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 14:12:36 by apicaza           #+#    #+#             */
-/*   Updated: 2026/01/26 16:30:23 by apicaza          ###   ########.fr       */
+/*   Updated: 2026/01/26 16:45:05 by apicaza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,12 +40,12 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 int	main(void)
 {
 	char	*big = "El Athletic es el mejor";
-	char *little = "es el mejor";
+	char *little = "es el";
 
 	printf("Texto entero es %s\n", big);
 	printf("texto buscado es %s\n", little);
 	printf("test 1 se puede entero %s\n", ft_strnstr(big, little, 24));
 	printf("test 2 (No encontrado): %s\n", ft_strnstr(big, little, 8));
-	printf("test 2 (No suficiente espacio): %s\n", ft_strnstr(big, little, 17));
+	printf("test 2 (No suficiente espacio): %s\n", ft_strnstr(big, little, 14));
 	return (0);
 }*/
