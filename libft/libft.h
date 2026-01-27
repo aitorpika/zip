@@ -6,7 +6,7 @@
 /*   By: apicaza <apicaza@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 11:09:44 by apicaza-          #+#    #+#             */
-/*   Updated: 2026/01/26 14:37:43 by apicaza          ###   ########.fr       */
+/*   Updated: 2026/01/27 17:05:24 by apicaza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,5 +52,13 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
  ******************************************************************************/
 
 char	*ft_strnstr(const char *big, const char *little, size_t len);
+int		ft_atoi(const char *str);
+
+/*******************************************************************************
+ *              Memory														   *
+ ******************************************************************************/
+
+void	*ft_calloc(size_t num, size_t size);
+char	*ft_strdup(const char *str);
 
 #endif
