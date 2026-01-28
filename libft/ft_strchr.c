@@ -6,11 +6,13 @@
 /*   By: apicaza <apicaza@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 14:51:04 by apicaza           #+#    #+#             */
-/*   Updated: 2026/01/23 17:05:25 by apicaza-         ###   ########.fr       */
+/*   Updated: 2026/01/28 11:48:19 by apicaza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
+#include <stdio.h>
 
 char	*ft_strchr(const char *str, int c)
 {
@@ -28,11 +30,12 @@ char	*ft_strchr(const char *str, int c)
 	return (0);
 }
 /*
-#include <stdio.h>
 int	main(void)
 {
 	const char str[15] = "Gora Athletic";
+	const char str1[15] = "Gora Athletic";
 
-	printf("el resultado es %s\n", ft_strchr(str, 'A'));
+	printf("el resultado con ft es %s\n", ft_strchr(str, 'A'));
+	printf("el resultado con orig es %s\n", strchr(str1, 'A'));
 	return (0);
 }*/

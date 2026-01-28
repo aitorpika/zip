@@ -6,7 +6,7 @@
 /*   By: apicaza <apicaza@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 12:17:12 by apicaza           #+#    #+#             */
-/*   Updated: 2026/01/26 13:16:09 by apicaza          ###   ########.fr       */
+/*   Updated: 2026/01/28 11:01:28 by apicaza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 }
 /*
 #include <stdio.h>
+#include <string.h>
 
 int	main(void)
 {
@@ -38,5 +39,6 @@ int	main(void)
 	char c = 'h';
 
 	printf("%s\n", (char *)ft_memchr(s, c, 12));
+	printf("%s\n", (char *)memchr(s, c, 12));
 	return (0);
 }*/

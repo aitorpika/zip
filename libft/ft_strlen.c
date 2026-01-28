@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: apicaza- <apicaza-@student.42urduliz.      +#+  +:+       +#+        */
+/*   By: apicaza <apicaza@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 11:25:50 by apicaza-          #+#    #+#             */
-/*   Updated: 2026/01/20 15:23:26 by apicaza-         ###   ########.fr       */
+/*   Updated: 2026/01/28 12:15:42 by apicaza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
+#include <string.h>
+#include <stdio.h>
 
 size_t	ft_strlen(const char *str)
 {
@@ -26,14 +27,19 @@ size_t	ft_strlen(const char *str)
 	return (count);
 }
 /*
-#include <stdio.h>
-
 int	main(void)
 {
 	char	*texto;
-	int		num;
+	int		numft;
+	int		numorg;
 
 	texto = "Aupa Athletic";
-	num = ft_strlen(texto);
-	printf ("%d", num);
+	numft = ft_strlen(texto);
+	printf ("Con ft %d\n", numft);
+
+	texto = "Aupa Athletic";
+	numorg = strlen(texto);
+	printf ("Con orig %d\n", numorg);
+
+	return (0);
 }*/

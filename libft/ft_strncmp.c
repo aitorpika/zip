@@ -6,11 +6,13 @@
 /*   By: apicaza <apicaza@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 10:50:32 by apicaza           #+#    #+#             */
-/*   Updated: 2026/01/26 12:13:49 by apicaza          ###   ########.fr       */
+/*   Updated: 2026/01/28 12:21:33 by apicaza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
+#include <stdio.h>
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
@@ -28,13 +30,12 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (ts1[i] - ts2[i]);
 }
 /*
-#include <stdio.h>
-
 int	main(void)
 {
 	char *s1 = "Pikaca";
 	char *s2 = "Pikaxu";
 
-	printf("diferencia es %d\n", ft_strncmp(s1, s2, 5));
+	printf("diferencia es con ft es: %d\n", ft_strncmp(s1, s2, 5));
+	printf("diferencia es con org es: %d\n", strncmp(s1, s2, 5));
 	return (0);
 }*/

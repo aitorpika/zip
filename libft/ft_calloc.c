@@ -6,18 +6,21 @@
 /*   By: apicaza <apicaza@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/27 14:08:39 by apicaza           #+#    #+#             */
-/*   Updated: 2026/01/27 16:38:28 by apicaza          ###   ########.fr       */
+/*   Updated: 2026/01/28 13:05:17 by apicaza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 #include <stdio.h>
+#include <stdint.h>
 
 void	*ft_calloc(size_t num, size_t size)
 {
 	void	*str;
 
+	if (num != 0 && size > SIZE_MAX / num)
+		return (NULL);
 	str = malloc(num * size);
 	if (str != NULL)
 		ft_bzero(str, num * size);

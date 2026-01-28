@@ -6,11 +6,13 @@
 /*   By: apicaza <apicaza@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 16:21:26 by apicaza           #+#    #+#             */
-/*   Updated: 2026/01/23 16:59:01 by apicaza          ###   ########.fr       */
+/*   Updated: 2026/01/28 12:48:51 by apicaza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
+#include <string.h>
 
 char	*ft_strrchr(const char *str, int c)
 {
@@ -28,12 +30,11 @@ char	*ft_strrchr(const char *str, int c)
 	return (0);
 }
 /*
-#include <stdio.h>
-
 int	main(void)
 {
 	const char str[15] = "Gora Athletic";
 
-	printf("el resultado es %s\n", ft_strrchr(str, 'A'));
+	printf("el resultado con ft es: %s\n", ft_strrchr(str, 'A'));
+	printf("el resultado con org es: %s\n", strrchr(str, 'A'));
 	return (0);
 }*/

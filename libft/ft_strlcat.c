@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: apicaza- <apicaza-@student.42urduliz.com>  +#+  +:+       +#+        */
+/*   By: apicaza <apicaza@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 16:12:16 by apicaza-          #+#    #+#             */
-/*   Updated: 2026/01/22 18:34:37 by apicaza-         ###   ########.fr       */
+/*   Updated: 2026/01/28 11:54:56 by apicaza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
+#include <bsd/string.h>
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
@@ -35,9 +37,6 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	return (lendest + lensrc);
 }
 /*
-#include <stdio.h>
-#include <bsd/string.h>
-
 int	main(void)
 {
 	char	src[] = "Athletic";
